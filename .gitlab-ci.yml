@@ -42,8 +42,6 @@ bundle-dev:
     - build/ui-bundle.zip
 pages:
   stage: deploy
-  only:
-  - master@antora/antora-ui-default
   cache: *pull_cache
   script:
   - *npm_install
