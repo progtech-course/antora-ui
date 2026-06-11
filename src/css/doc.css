@@ -270,6 +270,10 @@
   margin-top: 0;
 }
 
+.doc table.tableblock th {
+  background: var(--code-background);
+}
+
 .doc table.tableblock th,
 .doc table.tableblock td {
   padding: 0.5rem;

@@ -34,6 +34,16 @@ E = mc^2^.
 Eum an doctus <<liber-recusabo,maiestatis efficiantur>>.
 Eu mea inani iriure.footnote:[Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit.]
 
+[source,java]
+----
+class A implements Comparable<A> {
+  public static int compareTo(final Object o) {
+    return 0;
+  }
+}
+
+----
+
 [,json]
 ----
 {
