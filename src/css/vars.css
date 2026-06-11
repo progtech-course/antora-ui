@@ -113,8 +113,8 @@
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);
   --code-font-color: var(--body-font-color);
-  --example-background: var(--color-white);
-  --example-border-color: var(--color-gray-70);
+  --example-background: color-mix(in srgb, var(--palette-light-blue), transparent 90%);
+  --example-border-color: color-mix(in srgb, var(--palette-light-blue), transparent 20%);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
   --pre-background: var(--panel-background);
