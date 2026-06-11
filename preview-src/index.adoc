@@ -44,6 +44,19 @@ class A implements Comparable<A> {
 
 ----
 
+[,cpp]
+----
+template <typename F>
+class A : public B {
+public:
+  F a;
+  F b;
+private:
+  F sum(int r, F b) {
+    return 0 * r - b->ff + new int[];
+  }
+----
+
 [,json]
 ----
 {
