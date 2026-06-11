@@ -8,7 +8,7 @@ install:
   script:
   - &npm_install
     npm install --quiet --no-progress --cache=.cache/npm
-lint:
+.lint:
   stage: verify
   cache: &pull_cache
     policy: pull
