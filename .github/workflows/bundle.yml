@@ -48,7 +48,16 @@ jobs:
           path: build/ui-bundle.zip
           archive: false
 
+      - name: Build site
+        run: |
+          npx gulp preview:build
+          rm -fr public/_/{helpers,layouts,partials}
 
+      - name: Upload artifacts
+        id: demo
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
 
   deploy-demo-site:
     runs-on: ubuntu-latest
@@ -63,17 +72,6 @@ jobs:
       url: ${{ steps.docs.outputs.page_url }}
 
     steps:
-      - name: Build site
-        run: |
-          npx gulp preview:build
-          rm -fr public/_/{helpers,layouts,partials}
-
-      - name: Upload artifacts
-        id: demo
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: public
-
       - name: Deploy to GitHub Pages
         id: demo
         uses: actions/deploy-pages@v4
