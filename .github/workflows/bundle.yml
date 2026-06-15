@@ -1,0 +1,49 @@
+name: Create UI bundle
+
+on:
+  push:
+
+env:
+  NODE_VERSION: 18.x
+  NPM_CACHE_DIR: .cache/npm
+
+jobs:
+  build-ui:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v6
+
+      - name: Set up node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Access npm cache
+        uses: actions/cache@v5
+        id: npm-cache
+        with:
+          path: ${{ env.NPM_CACHE_DIR }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: |
+          npm install --cache=${{ env.NPM_CACHE_DIR }}
+
+      - name: Lint
+        run: |
+          npx gulp lint
+
+      - name: Build bundle
+        run: |
+          npx gulp bundle
+
+      - name: Upload bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-bundle
+          path: build/ui-bundle.zip
+

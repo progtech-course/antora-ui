@@ -1,5 +1,5 @@
 = Hardware and Software Requirements
-Author Name
+:page-authors: Author Name <email@example.com>; Second Author <https://website.com>
 :idprefix:
 :idseparator: -
 :!example-caption:
@@ -11,6 +11,8 @@ Author Name
 [.float-group]
 --
 image:multirepo-ssg.svg[Multirepo SSG,180,135,float=right,role=float-gap]
+{authors}
+
 Platonem complectitur mediocritatem ea eos.
 Ei nonumy deseruisse ius.
 Mel id omnes verear.
@@ -55,6 +57,7 @@ private:
   F sum(int r, F b) {
     return 0 * r - b->ff + new int[];
   }
+}
 ----
 
 [,json]

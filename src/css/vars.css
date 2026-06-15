@@ -8,6 +8,7 @@
   --palette-red: #e34234;
   --palette-dark-blue: #013c58;
 
+  /* variants */
   --palette-green-tint: #f2fbe8;
   --palette-green-extra-tint: #f4fff0;
   --palette-yellow-tint: #fffdf7;
@@ -113,8 +114,8 @@
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);
   --code-font-color: var(--body-font-color);
-  --example-background: color-mix(in srgb, var(--palette-light-blue), transparent 90%);
-  --example-border-color: color-mix(in srgb, var(--palette-light-blue), transparent 20%);
+  --example-background: color-mix(in sRGB, var(--palette-light-blue), transparent 90%);
+  --example-border-color: color-mix(in sRGB, var(--palette-light-blue), transparent 20%);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
   --pre-background: var(--panel-background);
@@ -124,7 +125,7 @@
   --quote-border-color: var(--palette-green);
   --quote-font-color: var(--color-gray-70);
   --quote-attribution-font-color: var(--color-gray-40);
-  --sidebar-background: color-mix(in srgb, var(--palette-dark-blue), transparent 65%);
+  --sidebar-background: color-mix(in sRGB, var(--palette-dark-blue), transparent 65%);
   --table-border-color: var(--panel-border-color);
   --table-stripe-background: var(--panel-background);
   --table-footer-background: var(--code-background) /*linear-gradient(to bottom, var(--color-smoke-70) 0%, var(--color-white) 100%)*/;
@@ -135,7 +136,7 @@
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: color-mix(in srgb, var(--palette-light-blue), transparent 30%);
+  --footer-background: color-mix(in sRGB, var(--palette-light-blue), transparent 30%);
   --footer-font-color: var(--color-gray-70);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */

@@ -1,0 +1,18 @@
+{{#if page.attributes.authors}}
+<div class="authors">
+  <p>Authors:</p>
+  <ul>
+    {{#each (parseAuthors page.attributes.authors)}}
+      <li>
+        {{#if url}}
+          <a href="{{url}}">{{name}}</a>
+        {{else if email}}
+          <a href="mailto:{{email}}">{{name}}</a>
+        {{else}}
+          {{name}}
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
+{{/if}}
