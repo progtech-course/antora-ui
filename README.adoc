@@ -1,8 +1,7 @@
 = Antora pages design
 // Project URLs:
 :url-project: https://github.com/progtech-course/antora-ui
-:url-ci-pipelines: {url-project}/pipelines
-:workflow: bundle.yaml
+:workflow: bundle.yml
 :img-ci-status: {url-project}/actions/workflows/{workflow}/badge.svg
 :antora-url-project: https://gitlab.com/antora/antora-ui-default
 
