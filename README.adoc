@@ -8,7 +8,7 @@
 
 image:{img-ci-status}[CI Status]
 
-The customisation of the {antora-url-project}[default Antor UI] for the "Programming Technologies" course.
+The customisation of the {antora-url-project}[default Antora UI] for the "Programming Technologies" course.
 
 == Copyright and License
 
