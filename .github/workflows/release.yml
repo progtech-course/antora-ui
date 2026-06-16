@@ -5,6 +5,10 @@ on:
     - cron: "0 2 * * *"
   workflow_dispatch:
 
+env:
+  NODE_VERSION: 18.x
+  NPM_CACHE_DIR: .cache/npm
+
 jobs:
   release:
     runs-on: ubuntu-latest
