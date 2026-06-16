@@ -1,11 +1,13 @@
 = Antora pages design
 // Project URLs:
-:url-project: https://github.com/progtech-course/antora-ui
+:url-project: https://github.com/progtech-course/antora-ui/actions/workflows
 :workflow: bundle.yml
-:img-ci-status: {url-project}/actions/workflows/{workflow}/badge.svg
+:img-ci-status: {url-project}/{workflow}/badge.svg
+:img-rel-status: {url-project}/release.yml/badge.svg
 :antora-url-project: https://gitlab.com/antora/antora-ui-default
 
 image:{img-ci-status}[CI Status]
+image:{img-rel-status}[Release Status]
 
 The customisation of the {antora-url-project}[default Antora UI] for the "Programming Technologies" course.
 

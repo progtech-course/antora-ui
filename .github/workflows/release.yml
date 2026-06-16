@@ -1,0 +1,50 @@
+name: Release the binary
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Set up node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Access npm cache
+        uses: actions/cache@v4
+        id: npm-cache
+        with:
+          path: ${{ env.NPM_CACHE_DIR }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: |
+          npm install --cache=${{ env.NPM_CACHE_DIR }}
+
+      - name: Lint
+        run: |
+          npx gulp lint
+
+      - name: Build bundle
+        run: |
+          npx gulp bundle
+
+      - name: Release
+        uses: andelf/nightly-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: latest
+          name: 'Antora custom UI design ($$)'
+          files: |
+            build/ui-bundle.zip
