@@ -1,0 +1,12 @@
+{{#if page.attributes.authors}}
+  <div class="authors">
+    {{> author-header }}
+    <ul>
+      {{#each (parseAuthors page.attributes.authors)}}
+        <li>
+          {{> author }}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}

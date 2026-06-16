@@ -1,0 +1,7 @@
+.authors {
+  margin-top: 0.5rem;
+  color: var(--color-gray-50);
+  border: 0.2rem solid var(--nav-border-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+}
