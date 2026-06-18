@@ -3,32 +3,32 @@
 }
 
 .todo td.icon i.icon-caution {
-  background-color: var(--palette-orange) !important;
+  background-color: var(--todo-colour) !important;
   color: var(--color-white) !important;
 }
 
 .todo td.icon i.icon-important {
-  background-color: var(--palette-orange) !important;
+  background-color: var(--todo-colour) !important;
   color: var(--color-white) !important;
 }
 
 .todo td.icon i.icon-note {
-  background-color: var(--palette-orange) !important;
+  background-color: var(--todo-colour) !important;
   color: var(--color-white) !important;
 }
 
 .todo td.icon i.icon-tip {
-  background-color: var(--palette-orange) !important;
+  background-color: var(--todo-colour) !important;
   color: var(--color-white) !important;
 }
 
 .todo td.icon i.icon-warning {
-  background-color: var(--palette-orange) !important;
+  background-color: var(--todo-colour) !important;
   color: var(--color-white) !important;
 }
 
 .todo td.content {
-  background-color: var(--palette-orange-tint) !important;
+  background-color: var(--todo-background) !important;
   border-radius: 0.5rem !important;
-  outline: 0.25rem solid var(--palette-orange) !important;
+  outline: 0.25rem solid var(--todo-colour) !important;
 }

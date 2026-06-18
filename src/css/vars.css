@@ -81,6 +81,8 @@
   --page-version-menu-background: var(--palette-emerald-light);
   --page-version-missing-font-color: var(--color-gray-40);
   /* admonitions */
+  --todo-colour: var(--palette-orange);
+  --todo-background: var(--palette-orange-tint);
   --caution-color: #a0439c;
   --caution-on-color: var(--color-white);
   --important-color: var(--palette-red);
