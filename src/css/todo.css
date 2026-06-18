@@ -1,0 +1,11 @@
+.todo td.icon i::after {
+  content: "TODO" !important;
+  background-color: var(--palette-orange) !important;
+  color: var(--color-white) !important;
+}
+
+.todo td.content {
+  background-color: var(--palette-orange-tint) !important;
+  border-radius: 0.5rem !important;
+  outline: 0.25rem solid var(--palette-orange) !important;
+}
