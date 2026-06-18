@@ -7,16 +7,21 @@
   --palette-orange: #f5a201;
   --palette-red: #e34234;
   --palette-dark-blue: #013c58;
+  --palette-brown: #795548;
 
   /* variants */
-  --palette-orange-tint: #fce3b2;
+  --palette-orange-tint: #fdeccc;
   --palette-green-tint: #f2fbe8;
   --palette-green-extra-tint: #f4fff0;
   --palette-yellow-tint: #fffdf7;
   --palette-lime-shadow: #2d4c21;
+  --palette-lime-light: #e4f4dd;
+  --palette-red-light: #f9d9d6;
+  --palette-brown-light: #d6ccc8;
   --palette-emerald-shadow: #007957;
   --palette-emerald-light: #b2e6d8;
   --palette-emerald-extra-light: #e5f6f2;
+  --palette-light-blue-tint: #e5f3f4;
 
   /* colors */
   --color-white: #fff;
@@ -81,17 +86,24 @@
   --page-version-menu-background: var(--palette-emerald-light);
   --page-version-missing-font-color: var(--color-gray-40);
   /* admonitions */
-  --todo-colour: var(--palette-orange);
-  --todo-background: var(--palette-orange-tint);
-  --caution-color: #a0439c;
+  --border-width: 0.2rem;
+  --todo-colour: var(--palette-brown);
+  --todo-background: var(--palette-brown-light);
+
+  --caution-color: var(--palette-emerald-shadow);
+  --caution-background: var(--palette-emerald-extra-light);
   --caution-on-color: var(--color-white);
   --important-color: var(--palette-red);
+  --important-background: var(--palette-red-light);
   --important-on-color: var(--color-white);
   --note-color: var(--palette-light-blue);
+  --note-background: var(--palette-light-blue-tint);
   --note-on-color: var(--color-white);
   --tip-color: var(--palette-lime);
+  --tip-background: var(--palette-lime-light);
   --tip-on-color: var(--color-white);
   --warning-color: var(--palette-orange);
+  --warning-background: var(--palette-orange-tint);
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--color-jet-50);

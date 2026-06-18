@@ -1,0 +1,117 @@
+.doc .admonitionblock .icon {
+  border-radius: 1rem;
+}
+
+.doc .admonitionblock .icon i {
+  border-radius: 1rem;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+}
+
+
+i.fa[class^='icon-'],
+i.fa[class*=' icon-']::before {
+  content: "";
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-right: 0.25rem;
+  margin-left: -0.25rem;
+}
+
+
+.todo i.fa.icon-note::before {
+  -webkit-mask-image: url("../img/todo.svg");
+  mask-image: url("../img/todo.svg");
+  background-color: white;
+}
+
+i.fa.icon-note::before {
+  /*margin: 0.1rem;*/
+  -webkit-mask-image: url("../img/note.svg");
+  mask-image: url("../img/note.svg");
+  background-color: white;
+}
+
+
+.todo i.fa.icon-tip::before {
+  -webkit-mask-image: url("../img/todo.svg");
+  mask-image: url("../img/todo.svg");
+  background-color: white;
+}
+
+i.fa.icon-tip::before {
+  -webkit-mask-image: url("../img/tip.svg");
+  mask-image: url("../img/tip.svg");
+  background-color: white;
+}
+
+
+.todo i.fa.icon-important::before {
+  -webkit-mask-image: url("../img/todo.svg");
+  mask-image: url("../img/todo.svg");
+  background-color: white;
+}
+
+i.fa.icon-important::before {
+  -webkit-mask-image: url("../img/important.svg");
+  mask-image: url("../img/important.svg");
+  background-color: white;
+}
+
+
+.todo i.fa.icon-warning::before {
+  -webkit-mask-image: url("../img/todo.svg");
+  mask-image: url("../img/todo.svg");
+  background-color: white;
+}
+
+i.fa.icon-warning::before {
+  -webkit-mask-image: url("../img/warning.svg");
+  mask-image: url("../img/warning.svg");
+  background-color: white;
+}
+
+
+.todo i.fa.icon-caution::before {
+  -webkit-mask-image: url("../img/todo.svg");
+  mask-image: url("../img/todo.svg");
+  background-color: white;
+}
+
+i.fa.icon-caution::before {
+  -webkit-mask-image: url("../img/caution.svg");
+  mask-image: url("../img/caution.svg");
+  background-color: white;
+}
+
+
+.admonitionblock.caution td.content {
+  background-color: var(--caution-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--caution-color) !important;
+}
+
+.admonitionblock.tip td.content {
+  background-color: var(--tip-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--tip-color) !important;
+}
+
+.admonitionblock.important td.content {
+  background-color: var(--important-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--important-color) !important;
+}
+
+.admonitionblock.warning td.content {
+  background-color: var(--warning-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--warning-color) !important;
+}
+
+.admonitionblock.note td.content {
+  background-color: var(--note-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--note-color) !important;
+}

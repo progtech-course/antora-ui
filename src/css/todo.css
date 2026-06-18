@@ -27,8 +27,32 @@
   color: var(--color-white) !important;
 }
 
-.todo td.content {
+.admonitionblock.warning.todo td.content {
   background-color: var(--todo-background) !important;
   border-radius: 0.5rem !important;
-  outline: 0.25rem solid var(--todo-colour) !important;
+  outline: var(--border-width) solid var(--todo-colour) !important;
+}
+
+.admonitionblock.important.todo td.content {
+  background-color: var(--todo-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--todo-colour) !important;
+}
+
+.admonitionblock.note.todo td.content {
+  background-color: var(--todo-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--todo-colour) !important;
+}
+
+.admonitionblock.tip.todo td.content {
+  background-color: var(--todo-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--todo-colour) !important;
+}
+
+.admonitionblock.caution.todo td.content {
+  background-color: var(--todo-background) !important;
+  border-radius: 0.5rem !important;
+  outline: var(--border-width) solid var(--todo-colour) !important;
 }

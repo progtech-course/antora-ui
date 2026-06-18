@@ -7,6 +7,7 @@
 //:page-role: -toc
 :page-pagination:
 :description: A "preview" site for the UI.
+:icons: font
 
 [.float-group]
 --
@@ -333,6 +334,11 @@ Or you can install the metapackage to upgrade both packages at once.
 
 [subs=+quotes]
  $ npm i -g *antora*
+====
+
+[NOTE.todo]
+====
+Нужна ссыль на mounting process
 ====
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.
