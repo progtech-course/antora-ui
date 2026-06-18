@@ -291,16 +291,26 @@ Altera atomorum his ex, has cu elitr melius propriae.
 Eos suscipit scaevola at.
 
 [TIP]
+====
 This oughta do it!
 
 Cum dicat putant ne.
 Est in reque homero principes, meis deleniti mediocrem ad has.
 Altera atomorum his ex, has cu elitr melius propriae.
-Eos suscipit scaevola at.
+Eos suscipit scaevola at. `some code`
+[,python]
+----
+print(f"Hello world, {name}!")
+----
+====
 
 [NOTE]
 ====
-You've been down _this_ road before.
+You've been down _this_ road before. `some code`
+[,python]
+----
+print(f"Hello world, {name}!")
+----
 ====
 
 Cum dicat putant ne.
@@ -310,17 +320,29 @@ Eos suscipit scaevola at.
 
 [WARNING]
 ====
-Watch out!
+Watch out! `some code`
+[,python]
+----
+print(f"Hello world, {name}!")
+----
 ====
 
 [CAUTION]
 ====
-[#inline]#I wouldn't try that if I were you.#
+[#inline]#I wouldn't try that if I were you.# `some code`
+[,python]
+----
+print(f"Hello world, {name}!")
+----
 ====
 
 [IMPORTANT]
 ====
-Don't forget this step!
+Don't forget this step! `some code`
+[,python]
+----
+print(f"Hello world, {name}!")
+----
 ====
 
 .Key Points to Remember

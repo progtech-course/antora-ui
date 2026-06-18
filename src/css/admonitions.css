@@ -78,9 +78,9 @@ i.fa.icon-caution::before {
 }
 
 .admonitionblock.caution td.content {
-  background-color: var(--caution-background) !important;
-  border-radius: 0.5rem !important;
-  outline: var(--border-width) solid var(--caution-color) !important;
+  background-color: var(--caution-background);
+  border-radius: 0.5rem;
+  outline: var(--border-width) solid var(--caution-color);
 }
 
 .admonitionblock.tip td.content {
@@ -90,19 +90,19 @@ i.fa.icon-caution::before {
 }
 
 .admonitionblock.important td.content {
-  background-color: var(--important-background) !important;
-  border-radius: 0.5rem !important;
-  outline: var(--border-width) solid var(--important-color) !important;
+  background-color: var(--important-background);
+  border-radius: 0.5rem;
+  outline: var(--border-width) solid var(--important-color);
 }
 
 .admonitionblock.warning td.content {
-  background-color: var(--warning-background) !important;
-  border-radius: 0.5rem !important;
-  outline: var(--border-width) solid var(--warning-color) !important;
+  background-color: var(--warning-background);
+  border-radius: 0.5rem;
+  outline: var(--border-width) solid var(--warning-color);
 }
 
 .admonitionblock.note td.content {
-  background-color: var(--note-background) !important;
-  border-radius: 0.5rem !important;
-  outline: var(--border-width) solid var(--note-color) !important;
+  background-color: var(--note-background);
+  border-radius: 0.5rem;
+  outline: var(--border-width) solid var(--note-color);
 }
