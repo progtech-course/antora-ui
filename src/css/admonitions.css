@@ -6,9 +6,7 @@
   border-radius: 1rem;
   padding-top: 0.2rem !important;
   padding-bottom: 0.2rem !important;
-  /*background-color: rgba(0, 0, 0, 0.2);*/
 }
-
 
 i.fa[class^='icon-'],
 i.fa[class*=' icon-']::before {
@@ -19,7 +17,6 @@ i.fa[class*=' icon-']::before {
   margin-left: -0.25rem;
 }
 
-
 .todo i.fa.icon-note::before {
   -webkit-mask-image: url("../img/todo.svg");
   mask-image: url("../img/todo.svg");
@@ -27,12 +24,10 @@ i.fa[class*=' icon-']::before {
 }
 
 i.fa.icon-note::before {
-  /*margin: 0.1rem;*/
   -webkit-mask-image: url("../img/note.svg");
   mask-image: url("../img/note.svg");
   background-color: white;
 }
-
 
 .todo i.fa.icon-tip::before {
   -webkit-mask-image: url("../img/todo.svg");
@@ -46,7 +41,6 @@ i.fa.icon-tip::before {
   background-color: white;
 }
 
-
 .todo i.fa.icon-important::before {
   -webkit-mask-image: url("../img/todo.svg");
   mask-image: url("../img/todo.svg");
@@ -58,7 +52,6 @@ i.fa.icon-important::before {
   mask-image: url("../img/important.svg");
   background-color: white;
 }
-
 
 .todo i.fa.icon-warning::before {
   -webkit-mask-image: url("../img/todo.svg");
@@ -72,7 +65,6 @@ i.fa.icon-warning::before {
   background-color: white;
 }
 
-
 .todo i.fa.icon-caution::before {
   -webkit-mask-image: url("../img/todo.svg");
   mask-image: url("../img/todo.svg");
@@ -84,7 +76,6 @@ i.fa.icon-caution::before {
   mask-image: url("../img/caution.svg");
   background-color: white;
 }
-
 
 .admonitionblock.caution td.content {
   background-color: var(--caution-background) !important;
