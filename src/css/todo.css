@@ -1,5 +1,28 @@
 .todo td.icon i::after {
   content: "TODO" !important;
+}
+
+.todo td.icon i.icon-caution {
+  background-color: var(--palette-orange) !important;
+  color: var(--color-white) !important;
+}
+
+.todo td.icon i.icon-important {
+  background-color: var(--palette-orange) !important;
+  color: var(--color-white) !important;
+}
+
+.todo td.icon i.icon-note {
+  background-color: var(--palette-orange) !important;
+  color: var(--color-white) !important;
+}
+
+.todo td.icon i.icon-tip {
+  background-color: var(--palette-orange) !important;
+  color: var(--color-white) !important;
+}
+
+.todo td.icon i.icon-warning {
   background-color: var(--palette-orange) !important;
   color: var(--color-white) !important;
 }
